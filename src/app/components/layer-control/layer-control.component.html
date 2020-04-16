@@ -1,0 +1,9 @@
+<p>layer-control works!</p>
+<p>check change</p>
+<div *ngFor="let layer of layers">
+    <div>
+        layer: {{ layer.get('id') }}
+        <button (click)="hideMap(layer.get('id'))">hide</button>
+        <button (click)="showMap(layer.get('id'))">show</button>
+    </div>
+</div>
